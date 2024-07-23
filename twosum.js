@@ -5,7 +5,7 @@ function twoSum(arr, target) {
         let complement = target - arr[i];
 
         if (hashMap.hasOwnProperty(complement)) {
-            return { firstIndex: hashMap[complement], secondIndex: i };
+            return [ hashMap[complement],  i ];
         }
 
         hashMap[arr[i]] = i;
